@@ -6,6 +6,11 @@ const hbs = require('hbs');
 // require spotify-web-api-node package here:
 
 const app = express();
+const SpotifyWebApi = require('spotify-web-api-node');
+const spotifyApi = new SpotifyWebApi ({
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET
+})
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
