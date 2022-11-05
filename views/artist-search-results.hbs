@@ -1,5 +1,9 @@
-{{#each searchedArtist}}
-    <h2>{{name}}</h2> 
-    <a href="/artist={{id}}/albums"><img src="{{images.0.url}}" onerror="this.onerror=null; this.src='/images/turntable.png' "height="300" width="300"/></a>
-    <a href="/artist={{id}}/albums">View Albums</a>
-{{/each}}
+<section class="artist-results">
+    {{#each searchedArtist}}
+        <div class="individual-artist">
+            <h2 class="music-titles">{{name}}</h2> 
+            <a href="/artist={{id}}/albums"><img src="{{images.0.url}}" onerror="this.onerror=null; this.src='/images/turntable.png' "height="200" width="200"/></a>
+            <a class="button-style" href="/artist={{id}}/albums">View Albums</a>
+        </div>
+    {{/each}}
+</section>

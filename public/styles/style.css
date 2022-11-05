@@ -1,0 +1,104 @@
+body {
+    background-color: #fed9b7;
+    margin: 0;
+}
+
+#homepage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/home-concert.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#homepage h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10em;
+    color: #f07167;
+    margin-top: 0;
+}
+
+
+
+
+h2 {
+    color: #E1EFE6;
+}
+
+#artist-search{
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-results{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 30px;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.artist-results img{
+    border-radius: 10px;
+}
+
+
+.artist-results h2{
+    text-align: center;
+    color: #f07167;
+}
+
+.individual-artist{
+    width: 15em;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.button-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f07167;
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+.button-style:hover{
+    opacity: 0.5;
+}
+
+.music-titles{
+    font-size: 1em;
+    width: 200px;
+}
+
+.album-tracks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 50px;
+
+}
+
+.album-tracks h2{
+    font-size: 1em;
+    color: #00afb9;
+}
