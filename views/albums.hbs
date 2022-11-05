@@ -1,0 +1,5 @@
+{{#each albums}}
+    <h2>{{name}}</h2>
+    <img src="{{images.0.url}}" onerror="this.onerror=null; this.src='/images/turntable.png' "height="300" width="300"/>
+    <a href="/albums/{{id}}/tracks">View Tracks</a>
+{{/each}}
