@@ -80,7 +80,31 @@ h2 {
     color: aliceblue;
 }
 
+.navigation-button{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00AFB9;
+    box-sizing: border-box;
+    width: 400px;
+    height: 30px;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
 .button-style:hover{
+    opacity: 0.5;
+}
+
+.navigation-button:hover{
     opacity: 0.5;
 }
 
@@ -91,11 +115,17 @@ h2 {
 
 .album-tracks{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 50px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
+}
+
+#individual-track{
+    width: 20%;
+    padding: 20px;
 }
 
 .album-tracks h2{

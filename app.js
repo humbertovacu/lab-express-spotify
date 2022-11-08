@@ -37,11 +37,13 @@ app.get('/artist-search',(req, res) => {
 app.get('/artist=:id/albums/',(req, res) => {
     spotifyApi.getArtistAlbums(req.params.id)
    .then(artistAlbums => {res.render('albums', {albums: artistAlbums.body.items})})
+   .catch(err => console.log(err));
 })
 
 app.get('/albums/:id/tracks',(req, res) => {
     spotifyApi.getAlbumTracks(req.params.id)
    .then(albumTracks => {res.render('tracks', {tracks: albumTracks.body.items})})
+   .catch(err => console.log(err));
 })
 
 
